@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GameMaster : MonoBehaviour
 {
     public GameObject[] trees, animals;
-    public static GameObject GM; 
+    public static GameObject GM;
+    
     void Start()
     {
         trees = GameObject.FindGameObjectsWithTag("Trees");
@@ -14,7 +16,8 @@ public class GameMaster : MonoBehaviour
         maxTrees = trees.Length;
         treesPercent = maxTrees;
         animalsPercent = maxAnimals;
-        GameMaster.GM = gameObject; 
+        GameMaster.GM = gameObject;
+        InvokeRepeating("Ticks", 2f, 2f);
     }
      
     float maxAnimals, maxTrees;
@@ -48,5 +51,22 @@ public class GameMaster : MonoBehaviour
             }
 
         }
+        
     }
+
+    void Ticks()
+    {
+
+        if(treesPercent < maxTrees)
+        {
+            treesPercent += 0.2f;
+
+        }
+        if (animalsPercent < maxAnimals && treesPercent > 3f)
+        {
+            animalsPercent += 0.2f;
+
+        }
+    }
+
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraRayCast : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public GameObject MainHub;
     public GameObject Barn;
     public Camera cam;
     GameObject GM;
-    float storedResorcesTree = 0;
+    public Text animalT, treeT;
+    float storedResorcesTree = 0, storedAnimalsResorces = 0; 
     private void Start()
     {
         
@@ -29,15 +31,31 @@ public GameObject MainHub;
             //x.transform.SetParent(hit.transform);
             SwitchControlers(hit.collider.tag, hit.collider.gameObject, hit.point); 
         }
+
+        animalT.text = "Animal :" + storedAnimalsResorces.ToString();
+        treeT.text = "Wood: " + storedResorcesTree.ToString(); 
     }
     GameObject selectedHuman; 
     void SwitchControlers(string x, GameObject y, Vector3 hitPos){
 
         switch (x){
-            case "tree":
+            case "Trees":
+                Debug.Log("Trees");
                 GameMaster.GM.GetComponent<GameMaster>().treesPercent -= 0.5f;
                 storedResorcesTree += 5;
-                break; 
+                break;
+
+            case "Animals":
+                Debug.Log("Animals");
+                GameMaster.GM.GetComponent<GameMaster>().animalsPercent -= 1f;
+                storedAnimalsResorces += 10;
+                break;
+
+            case "Ground":
+                GameObject z =Instantiate(House, hitPos, y.transform.rotation);
+                z.transform.SetParent(y.transform);
+
+                break;
 
             default:
                  break; 
