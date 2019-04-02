@@ -10,8 +10,12 @@ public GameObject MainHub;
     public GameObject Mine;
     public GameObject Barn;
     public Camera cam;
-
-
+    GameObject GM;
+    float storedResorcesTree = 0;
+    private void Start()
+    {
+        
+    }
     private void Update()
     {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -30,21 +34,9 @@ public GameObject MainHub;
     void SwitchControlers(string x, GameObject y, Vector3 hitPos){
 
         switch (x){
-            case "Human":
-                y.GetComponent<HumanBehaviour>().active = true; 
-                selectedHuman = y; 
-                break; 
-             
-                
-
-        case "Ground":
-                if(selectedHuman != null){
-                    selectedHuman.GetComponent<Boyed_Behaviour>().ariveTarget.transform.position = hitPos; 
-                    selectedHuman.GetComponent<HumanBehaviour>().active = false; 
-                    selectedHuman = null;
-                }
-                
-
+            case "tree":
+                GameMaster.GM.GetComponent<GameMaster>().treesPercent -= 0.5f;
+                storedResorcesTree += 5;
                 break; 
 
             default:
