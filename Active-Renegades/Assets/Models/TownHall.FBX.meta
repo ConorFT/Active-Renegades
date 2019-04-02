@@ -1,17 +1,19 @@
 fileFormatVersion: 2
-guid: 6c550d34f098b674ab154bf1b7460ff9
+guid: 7003b5c2acbc1df41a0126fd58d46cbe
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: 02 - Default
-    2100002: 'Material #37'
-    2100004: 'Material #36'
-    2100006: 'Material #38'
+    2100000: 08 - Default
+    2100002: 'Material #67'
+    2100004: 'Material #71'
+    2100006: 'Material #68'
+    2100008: 'Material #69'
+    2100010: 'Material #70'
     2300000: //RootNode
     3300000: //RootNode
-    4300000: LumberMill
+    4300000: MainHub
   externalObjects: {}
   materials:
     importMaterials: 1
