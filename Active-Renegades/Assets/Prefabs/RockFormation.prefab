@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4369425922259519907}
   - component: {fileID: 4369425922258749827}
   - component: {fileID: 4369425922257619779}
+  - component: {fileID: 82597750361482814}
   m_Layer: 0
   m_Name: RockFormation
-  m_TagString: Untagged
+  m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &82597750361482814
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4369425922259817859}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1068287, y: 2.745413, z: 3.073241}
+  m_Center: {x: -0.030546255, y: -1.295534, z: 0.12986696}

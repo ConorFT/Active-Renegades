@@ -7,6 +7,7 @@ public class GameMaster : MonoBehaviour
 {
     public GameObject[] trees, animals;
     public static GameObject GM;
+     
     
     void Start()
     {
@@ -59,14 +60,16 @@ public class GameMaster : MonoBehaviour
 
         if(treesPercent < maxTrees)
         {
-            treesPercent += 0.2f;
+            treesPercent += 5f;
 
         }
         if (animalsPercent < maxAnimals && treesPercent > 3f)
         {
-            animalsPercent += 0.2f;
+            animalsPercent += 5f;
 
         }
     }
+
+
 
 }
