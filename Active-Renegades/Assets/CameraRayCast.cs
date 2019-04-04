@@ -11,6 +11,8 @@ public GameObject MainHub;
     public GameObject Mine;
     public GameObject Barn;
     public Camera cam;
+    public float storedAnimal;
+    public float storedTree;
     GameObject GM;
     public Text animalT, treeT, populationT;
     public Text houseT, branT, millT;
@@ -119,7 +121,7 @@ public GameObject MainHub;
         if(population > 0 && GameMaster.GM.GetComponent<GameMaster>().treesPercent > 5 ){
 
             GameMaster.GM.GetComponent<GameMaster>().animalsPercent -= 0.5f;
-            storedAnimalsResorces += 2f;
+            storedAnimalsResorces += storedAnimal;
         }
 
     }
@@ -128,7 +130,7 @@ public GameObject MainHub;
         if(population > 0 && GameMaster.GM.GetComponent<GameMaster>().animalsPercent > 5) {
 
             GameMaster.GM.GetComponent<GameMaster>().treesPercent -= 1f;
-            storedResorcesTree += 5f; 
+            storedResorcesTree += storedTree; 
         }
 
     } 

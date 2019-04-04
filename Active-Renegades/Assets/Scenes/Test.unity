@@ -3924,6 +3924,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trees: []
   animals: []
+  maxAnimals: 0
+  maxTrees: 0
   treesPercent: 100
   animalsPercent: 100
 --- !u!4 &310859332
@@ -10254,6 +10256,8 @@ MonoBehaviour:
   Mine: {fileID: 0}
   Barn: {fileID: 0}
   cam: {fileID: 872999365}
+  storedAnimal: 4
+  storedTree: 5
   animalT: {fileID: 316720909}
   treeT: {fileID: 326278867}
   populationT: {fileID: 1164188780}

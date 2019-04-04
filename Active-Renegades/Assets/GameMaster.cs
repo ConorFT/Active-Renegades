@@ -63,9 +63,9 @@ public class GameMaster : MonoBehaviour
             treesPercent += 0.5f;
 
         }
-        if (animalsPercent < maxAnimals && treesPercent > 3f)
+        if (animalsPercent < maxAnimals && treesPercent > 2f)
         {
-            animalsPercent += 0.5f;
+            animalsPercent += 1f;
 
         }
     }
