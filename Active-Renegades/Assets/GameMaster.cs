@@ -21,7 +21,7 @@ public class GameMaster : MonoBehaviour
         InvokeRepeating("Ticks", 2f, 2f);
     }
      
-    float maxAnimals, maxTrees;
+    public float maxAnimals, maxTrees;
     [Range(0,100)]
     public float treesPercent = 100f, animalsPercent = 100f; 
     // Update is called once per frame
@@ -60,12 +60,12 @@ public class GameMaster : MonoBehaviour
 
         if(treesPercent < maxTrees)
         {
-            treesPercent += 5f;
+            treesPercent += 0.5f;
 
         }
         if (animalsPercent < maxAnimals && treesPercent > 3f)
         {
-            animalsPercent += 5f;
+            animalsPercent += 0.25f;
 
         }
     }
