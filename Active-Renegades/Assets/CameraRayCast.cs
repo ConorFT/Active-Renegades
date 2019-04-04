@@ -118,8 +118,8 @@ public GameObject MainHub;
     {
         if(population > 0 && GameMaster.GM.GetComponent<GameMaster>().treesPercent > 5 ){
 
-            GameMaster.GM.GetComponent<GameMaster>().animalsPercent -= 1f;
-            storedAnimalsResorces += 10;
+            GameMaster.GM.GetComponent<GameMaster>().animalsPercent -= 0.5f;
+            storedAnimalsResorces += 2f;
         }
 
     }
@@ -128,7 +128,7 @@ public GameObject MainHub;
         if(population > 0 && GameMaster.GM.GetComponent<GameMaster>().animalsPercent > 5) {
 
             GameMaster.GM.GetComponent<GameMaster>().treesPercent -= 1f;
-            storedResorcesTree += 10; 
+            storedResorcesTree += 5f; 
         }
 
     } 
@@ -138,7 +138,7 @@ public GameObject MainHub;
         int x = population; 
         for(int i =0; i < x; i ++){
 
-            if(storedAnimalsResorces <= 0 && population > 0){
+            if(storedAnimalsResorces <= population - 1 && population > 0){
                 population--; 
             }else{
                 storedAnimalsResorces -= 2; 
@@ -153,7 +153,7 @@ public GameObject MainHub;
     public void ActiveHouseToBuild(int x)
     {
 
-        for(int i =0; i < buildings.Length; i ++){
+        for(int i = 0; i < buildings.Length; i ++){
 
             if (i != x) {
                 activeHouse[i] = false;
