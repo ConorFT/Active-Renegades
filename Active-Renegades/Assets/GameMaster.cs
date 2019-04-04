@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 
 public class GameMaster : MonoBehaviour
 {
     public GameObject[] trees, animals;
     public static GameObject GM;
+    public string levelToload;
+   
      
     
     void Start()
@@ -19,10 +22,11 @@ public class GameMaster : MonoBehaviour
         animalsPercent = maxAnimals;
         GameMaster.GM = gameObject;
         InvokeRepeating("Ticks", 2f, 2f);
+        
     }
      
     public float maxAnimals, maxTrees;
-    [Range(0,100)]
+    
     public float treesPercent = 100f, animalsPercent = 100f; 
     // Update is called once per frame
     void Update()
@@ -52,9 +56,19 @@ public class GameMaster : MonoBehaviour
             }
 
         }
-        
-    }
 
+        if(treesPercent < 5 || animalsPercent < 1){
+
+            doomCount += Time.deltaTime; 
+        } 
+        if(doomCount > 5){
+            doomCount = 0; 
+            endGame.enabled = true; 
+        } 
+    }
+    public Canvas endGame;
+    
+    public float doomCount = 0; 
     void Ticks()
     {
 
@@ -68,6 +82,12 @@ public class GameMaster : MonoBehaviour
             animalsPercent += 1f;
 
         }
+    }
+
+    public void ReloadLevel(){
+
+        SceneManager.LoadScene(levelToload);
+
     }
 
 

@@ -17,7 +17,7 @@ public GameObject MainHub;
     public Text animalT, treeT, populationT;
     public Text houseT, branT, millT;
     int population = 0;
-    float storedResorcesTree = 0, storedAnimalsResorces = 0; 
+    public float storedResorcesTree = 0, storedAnimalsResorces = 0; 
     private void Start()
     {
         InvokeRepeating("CheckFood", 2f, 2f);

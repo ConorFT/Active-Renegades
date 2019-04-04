@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -304,6 +304,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PineTreeTall (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
+      objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -382,6 +387,86 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 37376274}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &39022263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 39022264}
+  - component: {fileID: 39022266}
+  - component: {fileID: 39022265}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &39022264
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39022263}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1716083863}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 20, y: 56}
+  m_SizeDelta: {x: 497.8, y: 301.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &39022265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39022263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 56
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 66
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "18 million acres of forest is lost a year. \nwhere are all the chicks going
+    to live. "
+--- !u!222 &39022266
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39022263}
+  m_CullTransparentMesh: 0
 --- !u!1001 &53829956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1861,6 +1946,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 151840224}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &159826717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159826718}
+  - component: {fileID: 159826720}
+  - component: {fileID: 159826719}
+  m_Layer: 5
+  m_Name: BlackScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &159826718
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159826717}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 22.606524, y: 12.219742, z: 12.219742}
+  m_Children: []
+  m_Father: {fileID: 1716083863}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &159826719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159826717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &159826720
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159826717}
+  m_CullTransparentMesh: 0
 --- !u!1 &185879774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2273,6 +2432,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PineTreeTall (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
+      objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2547,6 +2711,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PineTreeTall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
       objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
@@ -3924,10 +4093,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trees: []
   animals: []
+  levelToload: Test
   maxAnimals: 0
   maxTrees: 0
   treesPercent: 100
   animalsPercent: 100
+  endGame: {fileID: 1716083862}
+  doomCount: 0
 --- !u!4 &310859332
 Transform:
   m_ObjectHideFlags: 0
@@ -5034,6 +5206,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PineTreeTall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
+      objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5213,6 +5390,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PineTreeTall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
       objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
@@ -6039,6 +6221,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PineTreeTall (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
+      objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6525,6 +6712,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PineTreeTall (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
+      objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6710,6 +6902,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PineTreeTall (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
+      objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6799,6 +6996,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PineTreeTall (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
       objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
@@ -7135,6 +7337,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PineTreeTall
+      objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
       objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
@@ -7695,6 +7902,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PineTreeTall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
       objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
@@ -8435,6 +8647,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PineTreeTall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
       objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
@@ -9571,6 +9788,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PineTreeTall (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
+      objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9649,6 +9871,135 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 828917067}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &838634586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 838634587}
+  - component: {fileID: 838634590}
+  - component: {fileID: 838634589}
+  - component: {fileID: 838634588}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &838634587
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838634586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1129426305}
+  m_Father: {fileID: 1716083863}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -135}
+  m_SizeDelta: {x: 301.9, y: 56.608}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &838634588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838634586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 838634589}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 310859331}
+        m_MethodName: ReloadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &838634589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838634586}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &838634590
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838634586}
+  m_CullTransparentMesh: 0
 --- !u!1001 &844847899
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10154,8 +10505,8 @@ MonoBehaviour:
   m_Script: {fileID: -1826476478, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mWorldCenterMode: 2
-  mWorldCenter: {fileID: 0}
+  mWorldCenterMode: 0
+  mWorldCenter: {fileID: 185879779}
 --- !u!81 &872999364
 AudioListener:
   m_ObjectHideFlags: 0
@@ -10264,6 +10615,8 @@ MonoBehaviour:
   houseT: {fileID: 2011741210}
   branT: {fileID: 1357079048}
   millT: {fileID: 127848028}
+  storedResorcesTree: 0
+  storedAnimalsResorces: 0
   buildings:
   - {fileID: 8536415226470526202, guid: cc4fc813377f2ac4283b93ec5a0a579e, type: 3}
   - {fileID: 8242783712932147232, guid: 9df97896e5557da4e99d3c81a1663a4e, type: 3}
@@ -10730,6 +11083,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PineTreeTall (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
       objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
@@ -12860,6 +13218,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124639333}
   m_CullTransparentMesh: 0
+--- !u!1 &1129426304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1129426305}
+  - component: {fileID: 1129426307}
+  - component: {fileID: 1129426306}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1129426305
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129426304}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 838634587}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1129426306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129426304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.04401779, g: 1, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 44
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 47
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Restart
+--- !u!222 &1129426307
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129426304}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1130091061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14241,6 +14678,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PineTreeTall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
       objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
@@ -16225,6 +16667,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1328389568}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1347034442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1347034443}
+  - component: {fileID: 1347034445}
+  - component: {fileID: 1347034444}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1347034443
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347034442}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1716083863}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 110, y: 100}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1347034444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347034442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: ec1210e8b97eb8f4badf0431ca21436a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1347034445
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347034442}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1347868663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16489,6 +17005,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PineTreeTall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
       objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
@@ -18176,6 +18697,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PineTreeTall (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
+      objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18444,6 +18970,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PineTreeTall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
       objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
@@ -20310,6 +20841,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PineTreeTall (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
+      objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20849,6 +21385,109 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1711827033}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1716083859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1716083863}
+  - component: {fileID: 1716083862}
+  - component: {fileID: 1716083861}
+  - component: {fileID: 1716083860}
+  m_Layer: 5
+  m_Name: GameOver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1716083860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716083859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1716083861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716083859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1716083862
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716083859}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1716083863
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716083859}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 159826718}
+  - {fileID: 39022264}
+  - {fileID: 1347034443}
+  - {fileID: 2000420704}
+  - {fileID: 838634587}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &1724449045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22306,6 +22945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PineTreeTall (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 159631134832105022, guid: 54b050418d7ff8941b6c73d5638b1dca,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trees
       objectReference: {fileID: 0}
     - target: {fileID: 159631134832265758, guid: 54b050418d7ff8941b6c73d5638b1dca,
         type: 3}
@@ -25011,6 +25655,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1998208468}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2000420703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2000420704}
+  - component: {fileID: 2000420706}
+  - component: {fileID: 2000420705}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2000420704
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000420703}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1716083863}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 704, y: 100}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2000420705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000420703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: ec1210e8b97eb8f4badf0431ca21436a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &2000420706
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000420703}
+  m_CullTransparentMesh: 0
 --- !u!1001 &2001560069
 PrefabInstance:
   m_ObjectHideFlags: 0
