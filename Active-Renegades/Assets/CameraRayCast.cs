@@ -24,6 +24,9 @@ public GameObject MainHub;
     }
     private void Update()
     {
+        if(storedResorcesTree <0 || storedAnimalsResorces > 0){
+            GameMaster.GM.GetComponent<GameMaster>().canEnd = true; 
+        }
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 

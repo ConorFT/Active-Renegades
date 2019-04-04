@@ -31,6 +31,7 @@ public class GameMaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
 
         for (int i = 0; i < maxTrees; i++)
         {
@@ -61,12 +62,13 @@ public class GameMaster : MonoBehaviour
 
             doomCount += Time.deltaTime; 
         } 
-        if(doomCount > 5){
+        if(doomCount > 5 && canEnd){
             doomCount = 0; 
             endGame.enabled = true; 
         } 
     }
     public Canvas endGame;
+    public bool canEnd = false; 
     
     public float doomCount = 0; 
     void Ticks()
@@ -89,6 +91,8 @@ public class GameMaster : MonoBehaviour
         SceneManager.LoadScene(levelToload);
 
     }
+
+   
 
 
 
