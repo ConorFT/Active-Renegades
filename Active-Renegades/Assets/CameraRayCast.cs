@@ -118,7 +118,8 @@ public GameObject MainHub;
     }
     void BarnAdded()
     {
-        if(population > 0 && GameMaster.GM.GetComponent<GameMaster>().treesPercent > 5 ){
+        if(population > 0 && GameMaster.GM.GetComponent<GameMaster>().treesPercent > 5 && GameMaster.GM.GetComponent<GameMaster>().animalsPercent > 0)
+        {
 
             GameMaster.GM.GetComponent<GameMaster>().animalsPercent -= 0.5f;
             storedAnimalsResorces += storedAnimal;
